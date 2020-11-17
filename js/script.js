@@ -10,18 +10,20 @@ var app = new Vue({
     nextImage: function () {
       this.imageIndex++
 
-      if (this.imageIndex === (this.image.length - 1)) {
+      if (this.imageIndex > (this.image.length - 1)) {
         this.imageIndex = 0
       }
+      console.log("next", this.imageIndex);
+
 
     },
     prevImage: function () {
       this.imageIndex--
 
-      if (this.imageIndex === 0) {
+      if (this.imageIndex < 0) {
         this.imageIndex = (this.image.length - 1)
       }
-
+      console.log("prev", this.imageIndex);
     }
 
 

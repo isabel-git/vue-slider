@@ -5,7 +5,6 @@ var app = new Vue({
   data: {
     imageIndex: 0,
     image: ["img/image1.jpg", "img/image2.jpg", "img/image3.jpg", "img/image4.jpg"],
-    names: ['Michele', 'Fabio', 'Roberto']
   },
   methods: {
     nextImage: function () {
@@ -27,9 +26,7 @@ var app = new Vue({
       console.log("prev", this.imageIndex);
     }
 
-
   }
-
 
 })
 

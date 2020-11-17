@@ -21,7 +21,7 @@
               <div class="images">
                   <img v-bind:src="image[imageIndex]" alt="">
               </div>
-              <div class="next" >
+              <div class="next" @click="nextImage">
                   <i class="fas fa-angle-right"></i>
               </div>
               <div class="nav">

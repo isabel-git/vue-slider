@@ -6,7 +6,7 @@ var app = new Vue({
     imageIndex: 0,
     image: ["img/image1.jpg", "img/image2.jpg", "img/image3.jpg", "img/image4.jpg"],
   },
-  methods: {
+  methods: { // next
     nextImage: function () {
       this.imageIndex++
 
@@ -15,8 +15,7 @@ var app = new Vue({
       }
       console.log("next", this.imageIndex);
 
-
-    },
+    }, // prev
     prevImage: function () {
       this.imageIndex--
 
@@ -24,7 +23,7 @@ var app = new Vue({
         this.imageIndex = (this.image.length - 1)
       }
       console.log("prev", this.imageIndex);
-    },
+    }, // circle
     circle: function (i) {
       this.imageIndex = i
     }

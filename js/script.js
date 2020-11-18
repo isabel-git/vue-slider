@@ -24,6 +24,9 @@ var app = new Vue({
         this.imageIndex = (this.image.length - 1)
       }
       console.log("prev", this.imageIndex);
+    },
+    circle: function (i) {
+      this.imageIndex = i
     }
 
   }
